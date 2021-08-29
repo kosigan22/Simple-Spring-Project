@@ -21,9 +21,24 @@ public class App {
         You can inject and object from the outside
          */
         Vehicle obj = (Vehicle) context.getBean("vehicle");
-        obj.drive();
+        obj.drive(); //Vroom Vroom
 
         Vehicle obj1 = (Vehicle) context.getBean("car");
-        obj1.drive();
+        obj1.drive();// Vroom Vroom
+
+        //-------------------------------------------------------------- Constructor Injector
+
+        Tire tire = (Tire) context.getBean("tire");
+        System.out.println(tire);
+
+        tire.setBrand("Montana");
+        tire.setCircumference(12);
+        System.out.println(tire);
+
+        //--------------------------------------------------------------  Autowired Annotation
+
+        Engine engine = (Engine) context.getBean("engine");
+
+        System.out.println(engine);
     }
 }
