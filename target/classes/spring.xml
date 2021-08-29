@@ -23,8 +23,4 @@
 
     </bean>
 
-    <bean id="engine" class="com.myspringproject.MyJavaApp.Engine">
-
-    </bean>
-
 </beans>

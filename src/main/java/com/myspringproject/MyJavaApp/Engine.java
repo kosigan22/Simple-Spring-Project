@@ -1,5 +1,8 @@
 package com.myspringproject.MyJavaApp;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Engine {
 
     private  String brand;
